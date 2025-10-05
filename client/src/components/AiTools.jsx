@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiToolsData, assets } from '../assets/assets';
+import { AiToolsData } from '../assets/assets';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '@clerk/clerk-react';
 
@@ -9,12 +9,11 @@ const AiTools = () => {
 
   return (
     <div
-      className='px-4 sm:px-20 xl:px-32 relative inline-flex flex-col w-full justify-center items-center bg-cover bg-no-repeat min-h-screen'
-      style={{ backgroundImage: `url(${assets.background})` }}
+      className='px-4 sm:px-20 xl:px-32 relative inline-flex flex-col w-full justify-center items-center min-h-screen bg-white'
     >
       <div className='text-center mt-24'>
         <h2 className='text-slate-700 text-[42px] font-semibold'>Powerful AI Tools</h2>
-        <p className='text-gray-500 max-w-lg mx-auto'>
+        <p className='text-gray-600 max-w-lg mx-auto'>
           Everything you need to create, enhance, and optimize your content with cutting-edge AI technology.
         </p>
       </div>

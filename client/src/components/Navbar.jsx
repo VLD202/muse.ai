@@ -10,8 +10,10 @@ const Navbar = () => {
   const { openSignIn } = useClerk();
 
   return (
-    <div className="fixed z-50 w-full backdrop-blur-2xl flex justify-between items-center py-3 px-6 sm:px-12 lg:px-20">
-      
+    <div 
+      className="fixed z-50 w-full flex justify-between items-center py-3 px-6 sm:px-12 lg:px-20 bg-transparent"
+      style={{ backgroundColor: 'transparent', backdropFilter: 'none' }}
+    >
       {/* Logo + Text */}
       <div 
         className="flex items-center cursor-pointer"
